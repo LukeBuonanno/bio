@@ -9,7 +9,7 @@
   --animate-duration: 1.5s;
 }
 .text-black {
-	color: #ffc0cb;
+	color: #714040;
 }
 
 .text-small {
@@ -34,22 +34,22 @@
 
 
 .text-blue {
-  color: #ffc0cb;
+  color: #714040;
   border-bottom: 1px solid currentColor;
 }
   
 .text-white-link {
-  color: #ffc0cb;
+  color: #714040;
   border-bottom: 1px solid currentColor;
 }
 
 
 a.text-blue:link  {
-  color: #ffc0cb;
+  color: #714040;
   border-bottom: 1px solid currentColor;
 }
 a.text-white-link:link  {
-  color: #ffc0cb;
+  color: #714040;
   border-bottom: 1px solid currentColor;
 }
 
@@ -58,23 +58,23 @@ a.text-blue:visited {
   border-bottom: 1px solid currentColor;
 }
 a.text-white-link:visited {
-  color: #ffc0cb86;
+  color: #71404086;
   border-bottom: 1px solid currentColor;
 }
 
 a.text-blue:hover {
-  color: #ffc0cb86;
+  color: #71404086;
   border-bottom: 1px solid currentColor;
   text-decoration: none;
 }
 a.text-white-link:hover {
-  color: #ffc0cb86;
+  color: #71404086;
   border-bottom: 1px solid currentColor;
   text-decoration: none;
 }
 
 a.text-blue:active {
-  color: #ffc0cb;
+  color: #714040;
   border-bottom: 1px solid currentColor;
 }
 a.text-white-link:active {
@@ -99,20 +99,20 @@ a.text-white-link:active {
 
 .bg-green {
 
-	background-color: #ffc0cb !important;
+	background-color: #714040 !important;
 }
 
 
 .btn-black {
 	color: #365A48;
-	background-color: #ffc0cb !important;
+	background-color: #714040 !important;
 }
 .btn-black:active, .btn-black:focus, .btn-black:hover {
-	color: #ffc0cb;
+	color: #714040;
 	background-color: #365A48 !important;
 }
 .btn-black:active, .btn-black:focus {
-	box-shadow:0 0 0 .2rem #ffc0cb;
+	box-shadow:0 0 0 .2rem #714040;
 }
 
 /* Black hrefs & hrs too */
@@ -277,3 +277,4 @@ height: 100px;
         flex: 1 1 100px;
     }
   
+
