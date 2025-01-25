@@ -78,7 +78,7 @@ a.text-blue:active {
   border-bottom: 1px solid currentColor;
 }
 a.text-white-link:active {
-  color: #365A48;
+  color: #bc8f8f;
   border-bottom: 1px solid currentColor;
 }
 
@@ -104,12 +104,12 @@ a.text-white-link:active {
 
 
 .btn-black {
-	color: #365A48;
+	color: #bc8f8f;
 	background-color: #714040 !important;
 }
 .btn-black:active, .btn-black:focus, .btn-black:hover {
 	color: #714040;
-	background-color: #365A48 !important;
+	background-color: #bc8f8f !important;
 }
 .btn-black:active, .btn-black:focus {
 	box-shadow:0 0 0 .2rem #714040;
@@ -117,11 +117,11 @@ a.text-white-link:active {
 
 /* Black hrefs & hrs too */
 .href-black {
-	color: #365A48;
+	color: #bc8f8f;
 }
 hr.black {
-	border-color: #365A48;
-	color: #365A48;
+	border-color: #bc8f8f;
+	color: #bc8f8f;
 }
 
 
@@ -133,12 +133,12 @@ hr.black {
 
 
 .images-border {
-	border: .5em solid #365A48;
+	border: .5em solid #bc8f8f;
 	border-radius: 3em;
 }
 
 .images-border-skiing {
-	border: .5em solid #365A48;
+	border: .5em solid #bc8f8f;
 	border-radius: 50%;
 }
 
@@ -155,7 +155,7 @@ hr.black {
 
 
 .RtnRed {
-	color: #365A48 !important;
+	color: #bc8f8f !important;
 	font-weight: bold;
 }
 .myGallery .item {
@@ -277,4 +277,5 @@ height: 100px;
         flex: 1 1 100px;
     }
   
+
 
