@@ -10065,7 +10065,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, bc8f8f 0%, bc8f8f, url("../img/header.jpg");
+  background: linear-gradient(to bottom, rgb(188, 143, 143 ) 0%, rgb(188, 143, 143), url("../img/header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
