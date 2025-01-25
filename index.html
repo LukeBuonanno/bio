@@ -290,11 +290,17 @@
     </p>
 		
   </div>
-<audio controls id="music" >
+ <audio id="music" src="audio.mp3" autoplay muted></audio>
+    <button id="toggle">Unmute</button>
 
-  <source src="audio.mp3" type="audio/mpeg">
-</audio>
-
+    <script>
+        const audio = document.getElementById('music');
+        const button = document.getElementById('toggle');
+        button.onclick = () => {
+            audio.muted = !audio.muted;
+            button.textContent = audio.muted ? 'Unmute' : 'Mute';
+        };
+    </script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
