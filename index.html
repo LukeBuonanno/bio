@@ -155,7 +155,13 @@
     <script>
         const audioToggleBtn = document.getElementById('audioToggleBtn');
         let isMuted = false;
-
+	const audio = document.getElementById('music');
+        const button = document.getElementById('toggle');
+ button.onclick = () => {
+            if (audio.paused) {
+                audio.play(); // Start playback if not already playing
+            }
+            audio.muted = !audio.muted;
         audioToggleBtn.addEventListener('click', () => {
             isMuted = !isMuted;
             audioToggleBtn.textContent = isMuted ? '🔇 Mute' : '🔊 Unmute';
