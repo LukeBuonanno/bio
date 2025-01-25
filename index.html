@@ -149,24 +149,36 @@
         <div class="col-lg-12 text-center">
           <h2 id="work">Lorem ipsum
 		   <button class="audio-toggle-btn" id="audioToggleBtn">🔊 Unmute</button>
- <audio id="music" src="audio.mp3"></audio>
-    <button id="toggle">Unmute</button>
+ <section class="page-section">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-lg-12 text-center">
+        <h2 id="work">Lorem ipsum</h2>
+        <button id="audioToggleBtn">🔊 Unmute</button>
+        <audio id="music" src="audio.mp3"></audio>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-        const audioToggleBtn = document.getElementById('audioToggleBtn');
-        let isMuted = false;
-	const audio = document.getElementById('music');
-        const button = document.getElementById('toggle');
- button.onclick = () => {
-            if (audio.paused) {
-                audio.play(); // Start playback if not already playing
-            }
-            audio.muted = !audio.muted;
-        audioToggleBtn.addEventListener('click', () => {
-            isMuted = !isMuted;
-            audioToggleBtn.textContent = isMuted ? '🔇 Mute' : '🔊 Unmute';
-        });
-    </script>
+<script>
+  // Audio toggle functionality
+  const audio = document.getElementById('music');
+  const audioToggleBtn = document.getElementById('audioToggleBtn');
+
+  let isPlaying = false;
+
+  audioToggleBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      audioToggleBtn.textContent = '🔊 Unmute';
+    } else {
+      audio.play();
+      audioToggleBtn.textContent = '🔇 Mute';
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
 <!--          <hr class="divider my-4" /> 
         </div>
 </main>
