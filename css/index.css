@@ -1,4 +1,19 @@
-
+ .audio-toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .audio-toggle-btn:hover {
+            background-color: #333;
+        }
 .animate__animated.animate__wobble {
   --animate-duration: 1.5s;
 }
