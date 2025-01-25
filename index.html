@@ -48,18 +48,6 @@
    
 <body id="page-top">
 
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { VolumeX, Volume2 } from "lucide-react";
-
-const AudioToggle = () => {
-  const [isMuted, setIsMuted] = useState(false);
-
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-  };
-
-  return (
     <div className="fixed bottom-4 right-4">
       <Button
         className="btn btn-black btn-xl js-scroll-trigger"
@@ -171,6 +159,17 @@ export default AudioToggle;
       <div class="row no-gutters">
         <div class="col-lg-12 text-center">
           <h2 id="work">Lorem ipsum
+		   <button class="audio-toggle-btn" id="audioToggleBtn">🔊 Unmute</button>
+
+    <script>
+        const audioToggleBtn = document.getElementById('audioToggleBtn');
+        let isMuted = false;
+
+        audioToggleBtn.addEventListener('click', () => {
+            isMuted = !isMuted;
+            audioToggleBtn.textContent = isMuted ? '🔇 Mute' : '🔊 Unmute';
+        });
+    </script>
 <!--          <hr class="divider my-4" /> 
         </div>
 </main>
