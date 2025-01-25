@@ -47,6 +47,31 @@
 </head>
    
 <body id="page-top">
+
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { VolumeX, Volume2 } from "lucide-react";
+
+const AudioToggle = () => {
+  const [isMuted, setIsMuted] = useState(false);
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
+
+  return (
+    <div className="fixed bottom-4 right-4">
+      <Button
+        className="btn btn-black btn-xl js-scroll-trigger"
+        onClick={toggleMute}
+      >
+        {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
+      </Button>
+    </div>
+  );
+};
+
+export default AudioToggle;
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
 
@@ -275,9 +300,6 @@
         </div>
 
       <div class="row">
-
-        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
-				  <a href="https://mailto:lukeabuonanno@gmail.com">
 						
       </div>
     </div>
@@ -290,21 +312,6 @@
     </p>
 		
   </div>
- <audio id="music" src="audio.mp3" autoplay muted></audio>
-    <button id="toggle">Unmute</button>
-
-    <script>
-        const audio = document.getElementById('music');
-        const button = document.getElementById('toggle');
-
-        button.onclick = () => {
-            if (audio.paused) {
-                audio.play(); 
-            }
-            audio.muted = !audio.muted;
-            button.textContent = audio.muted ? 'Unmute' : 'Mute';
-        };
-    </script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
