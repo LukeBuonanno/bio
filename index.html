@@ -293,10 +293,17 @@
  <audio id="music" src="audio.mp3" autoplay muted></audio>
     <button id="toggle">Unmute</button>
 
+     <audio id="music" src="audio.mp3"></audio>
+    <button id="toggle">Unmute</button>
+
     <script>
         const audio = document.getElementById('music');
         const button = document.getElementById('toggle');
+
         button.onclick = () => {
+            if (audio.paused) {
+                audio.play(); // Start playback if not already playing
+            }
             audio.muted = !audio.muted;
             button.textContent = audio.muted ? 'Unmute' : 'Mute';
         };
