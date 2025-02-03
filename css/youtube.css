@@ -26,6 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
+
   /* This line came off of Stackoverflow. It works very well. See the first answer from Vashishtha Jogi.
       https://stackoverflow.com/questions/1150163/stretch-and-scale-a-css-image-in-the-background-with-css-only
    */
@@ -41,6 +42,10 @@ body {
       https://stackoverflow.com/questions/20182409/how-to-make-a-youtube-embedded-video-a-full-page-width-one
   */
   overflow: hidden;
+ overflow: auto;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body > .container {
