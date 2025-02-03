@@ -57,6 +57,10 @@ body {
   color: #714040;
   text-align: left;
   background-color: #bc8f8f;
+  overflow: auto;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
