@@ -1,12 +1,9 @@
-
 body {
-  overflow: overlay; /* For non-webkit browsers */
+  overflow: auto;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-body::-webkit-scrollbar {
-  display: none; /* For webkit browsers */
-}
-
 .animate__animated.animate__wobble {
   --animate-duration: 1.5s;
 }
