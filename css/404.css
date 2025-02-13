@@ -6,7 +6,9 @@ body {
   overflow: overlay; /* For non-webkit browsers */
 }
 
-
+body::-webkit-scrollbar {
+  display: none; /* For webkit browsers */
+}
 .container {
   height: 100%;
   width: 100%;
