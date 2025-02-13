@@ -1,9 +1,4 @@
-body {
-  overflow: auto;
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
 .animate__animated.animate__wobble {
   --animate-duration: 1.5s;
 }
