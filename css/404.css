@@ -1,10 +1,6 @@
 html,
 body {
-  height: 100%;
-  overflow: auto;
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 100%
 }
 
 .container {
