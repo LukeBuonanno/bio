@@ -41,14 +41,13 @@ body {
       An interesting Stackoverflow post had a JS Fiddle that demonstrates this:
       https://stackoverflow.com/questions/20182409/how-to-make-a-youtube-embedded-video-a-full-page-width-one
   */
-}
-body {
-  overflow: overlay; /* For non-webkit browsers */
+  overflow: hidden;
+ overflow: auto;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* For webkit browsers */
-}
 body > .container {
   padding: 65px 10px 0;
 }
