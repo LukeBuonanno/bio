@@ -1,14 +1,12 @@
 html,
 body {
   height: 100%;
-}
-body {
-  overflow: overlay; /* For non-webkit browsers */
+  overflow: auto;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* For webkit browsers */
-}
 .container {
   height: 100%;
   width: 100%;
